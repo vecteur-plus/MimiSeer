@@ -1,0 +1,414 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SupervisorProcessing.Dao.Flag" Collapsed="true">
+    <Position X="8.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAQAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAIAAAIAA=</HashCode>
+      <FileName>Dao\Flag.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SupervisorProcessing.Dao.Schedule" Collapsed="true">
+    <Position X="12" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAACEAAAAAAAAAAAAAAAAQAUAAAACQAABAECACAAA=</HashCode>
+      <FileName>Dao\Schedule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SupervisorProcessing.Dao.Site" Collapsed="true">
+    <Position X="24.5" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAGABAAAEAAAAACAAAAAAQAAAAAAAEEAAAAAAQAAAA=</HashCode>
+      <FileName>Dao\Site.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SupervisorProcessing.DataContext.External.DbContextContentGrabber" Collapsed="true">
+    <Position X="14.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataContext\External\DbContextContentGrabber.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SupervisorProcessing.DataContext.External.DbContextSiteWeb" Collapsed="true">
+    <Position X="21.75" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAQAAAAQAAAAAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataContext\External\DbContextSiteWeb.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SupervisorProcessing.DataContext.DbContextIntern">
+    <Position X="10.75" Y="5.75" Width="1.5" />
+    <AssociationLine Name="_EntityEntryService" Type="SupervisorProcessing.Service.EntityEntryService" ManuallyRouted="true">
+      <Path>
+        <Point X="11" Y="5.75" />
+        <Point X="11" Y="5.008" />
+        <Point X="11.573" Y="5.008" Type="JumpStart" />
+        <Point X="11.74" Y="5.008" Type="JumpEnd" />
+        <Point X="15" Y="5.008" />
+        <Point X="15" Y="4.312" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAIQAAAAQIAAAQAAAEAAAAAEEAAAAEAAAAAAAAAACA=</HashCode>
+      <FileName>DataContext\DbContextIntern.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_EntityEntryService" />
+      <Property Name="Sites" />
+      <Property Name="Schedules" />
+      <Property Name="TypeIndexations" />
+      <Property Name="Agents" />
+      <Property Name="DetailedSiteCollectInformations" />
+      <Property Name="ScheduleMessages" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SupervisorProcessing.Model.Exchange.ResultIteration">
+    <Position X="2.5" Y="3.5" Width="1.5" />
+    <AssociationLine Name="AgentDeleted" Type="SupervisorProcessing.Model.Internal.CModelAgent">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.225" Y="0.585" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="AgentsAdded" Type="SupervisorProcessing.Model.Internal.CModelAgent" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="3.75" Y="4.796" />
+        <Point X="3.75" Y="5.171" />
+        <Point X="4.391" Y="5.171" />
+        <Point X="4.391" Y="8.25" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.376" Y="0.188" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAAAAAACAAAACAAAAAAABAUAAA=</HashCode>
+      <FileName>Model\Exchange\ResultIteration.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="TypeIndexationsAdded" />
+      <Property Name="AgentDeleted" />
+      <Property Name="AgentsAdded" />
+      <Property Name="DetailedSiteCollectInformationEntries" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="SupervisorProcessing.Model.Internal.Entry.AEntry&lt;T&gt;" Collapsed="true">
+    <Position X="7.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Model\Internal\Entry\AEntry.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SupervisorProcessing.Model.Internal.Entry.ExtendedDetailedSiteCollectEntry">
+    <Position X="6.5" Y="3.75" Width="1.5" />
+    <InheritanceLine Type="SupervisorProcessing.Model.Internal.Entry.AEntry&lt;T&gt;" ManuallyRouted="true">
+      <Path>
+        <Point X="8.25" Y="3.312" />
+        <Point X="8.25" Y="3.554" />
+        <Point X="7.25" Y="3.554" />
+        <Point X="7.25" Y="3.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Internal\Entry\ExtendedDetailedSiteCollectEntry.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SupervisorProcessing.Model.Internal.Entry.GenericEntry" Collapsed="true">
+    <Position X="8.5" Y="3.75" Width="1.5" />
+    <InheritanceLine Type="SupervisorProcessing.Model.Internal.Entry.AEntry&lt;T&gt;" ManuallyRouted="true">
+      <Path>
+        <Point X="8.25" Y="3.312" />
+        <Point X="8.25" Y="3.554" />
+        <Point X="9.25" Y="3.554" />
+        <Point X="9.25" Y="3.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Internal\Entry\GenericEntry.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SupervisorProcessing.Model.Internal.CModelAgent" Collapsed="true">
+    <Position X="4.25" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAHAAAAAAAAAEQAAAAAgAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Internal\CModelAgent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SupervisorProcessing.Model.Internal.CModelSchedule" Collapsed="true">
+    <Position X="1.75" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAwCAAAAAAAAgAQggAAAQAAIIAhAAAAAAEAggAAgAIA=</HashCode>
+      <FileName>Model\Internal\CModelSchedule.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Site" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SupervisorProcessing.Model.Internal.CModelSite" Collapsed="true">
+    <Position X="1.75" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQCABAAiEAAAAAAgAEAAAQAAEAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Internal\CModelSite.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="TypeIndexation" />
+      <Property Name="Agent" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Schedules" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="SupervisorProcessing.Model.Internal.CModelTypeIndexation" Collapsed="true">
+    <Position X="2.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAQAAAAAgAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Internal\CModelTypeIndexation.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Sites" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="SupervisorProcessing.Model.Internal.ExtendedDetailedSiteCollectInformation" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAEAAAAAAAAAAAAAAAABAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Model\Internal\ExtendedDetailedSiteCollectInformation.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SupervisorProcessing.Model.Internal.ScheduleMessage" Collapsed="true">
+    <Position X="10.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Model\Internal\ScheduleMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SupervisorProcessing.Repository.FlagRepository" Collapsed="true">
+    <Position X="21.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAEEAAAAAAAAAAAAAAAggAIAA=</HashCode>
+      <FileName>Repository\FlagRepository.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_DbContextSiteWeb" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SupervisorProcessing.Repository.ScheduleRepository" Collapsed="true">
+    <Position X="14.25" Y="1.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAQAgAAAAAAAQAAAAAAAAAAIAA=</HashCode>
+      <FileName>Repository\ScheduleRepository.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_DbContextFactory" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SupervisorProcessing.Repository.SiteRepository" Collapsed="true">
+    <Position X="15.25" Y="10.5" Width="2.5" />
+    <AssociationLine Name="_DbContextFactory" Type="SupervisorProcessing.DataContext.External.DbContextSiteWeb" ManuallyRouted="true">
+      <Path>
+        <Point X="17.75" Y="10.721" />
+        <Point X="21.75" Y="10.721" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAQAAAAAAAAAQAQAAIAAAAQAAAAAAAAAAAAI=</HashCode>
+      <FileName>Repository\SiteRepository.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_DbContextFactory" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SupervisorProcessing.Service.Collecte.ServiceCollect">
+    <Position X="18" Y="2.5" Width="1.5" />
+    <AssociationLine Name="_ServiceTypeIndexation" Type="SupervisorProcessing.Service.ServiceTypeIndexation">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.68" Y="0.1" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>ABABIAAiQQAAAUAAQgAAAgAgBIAAEAAIASgAIACVICA=</HashCode>
+      <FileName>Service\Collecte\ActualizationCollect.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_serviceSite" />
+      <Field Name="_serviceFlag" />
+      <Field Name="_serviceSchedule" />
+      <Field Name="_ServiceTypeIndexation" />
+      <Field Name="_ServiceAgent" />
+      <Field Name="_DbContextIntern" />
+      <Field Name="_ScheduleMessageService" />
+      <Field Name="_EntityEntryService" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SupervisorProcessing.Service.Collecte.CollectManager" Collapsed="true">
+    <Position X="19" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACEABAAAAAAAACAAAAAAAAAAAAAABAAAAAAAIAA=</HashCode>
+      <FileName>Service\Collecte\CollectManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_ActionLooper" />
+      <Field Name="_ServiceCollect" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SupervisorProcessing.Service.BasicSiteCollectInformationService" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAECAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Service\BasicSiteCollectInformationService.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_DetailedInformationService" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SupervisorProcessing.Service.DetailedSiteCollectInformationService" Collapsed="true">
+    <Position X="5.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAQAAAAAICAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Service\DetailedSiteCollectInformationService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SupervisorProcessing.Service.EntityEntryService" Collapsed="true">
+    <Position X="14.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAACAAAAAAAAQAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Service\EntityEntryService.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Entries" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="SupervisorProcessing.Service.ScheduleMessageService" Collapsed="true">
+    <Position X="14.75" Y="7" Width="1.5" />
+    <AssociationLine Name="_DBContextIntern" Type="SupervisorProcessing.DataContext.DbContextIntern">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.262" Y="0.069" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAgAAAAAAAAAgAAAAAIAAAAAAA=</HashCode>
+      <FileName>Service\ScheduleMessageService.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_DBContextIntern" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SupervisorProcessing.Service.ServiceAgent" Collapsed="true">
+    <Position X="17.25" Y="8.25" Width="1.5" />
+    <AssociationLine Name="_RepoRepliTbSites" Type="SupervisorProcessing.Repository.SiteRepository">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="0.089" Y="0.102" Height="0.182" Width="1.368" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AQAEAAACAAAAQAgAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service\ServiceAgent.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_RepoRepliTbSites" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SupervisorProcessing.Service.ServiceFlag" Collapsed="true">
+    <Position X="20.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAIoAAgAAAAA=</HashCode>
+      <FileName>Service\ServiceFlag.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_RepositoryFlag" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SupervisorProcessing.Service.ServiceSchedule" Collapsed="true">
+    <Position X="14.5" Y="3" Width="1.5" />
+    <AssociationLine Name="_DbContextFactory" Type="SupervisorProcessing.DataContext.DbContextIntern">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.299" Y="0.307" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AABAAAAABAAAAAgAAAAAAAAAAAAAAQAAAAAAgAAAAAA=</HashCode>
+      <FileName>Service\ServiceSchedule.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_repoContentGrabber" />
+      <Field Name="_DbContextFactory" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SupervisorProcessing.Service.ServiceSite" Collapsed="true">
+    <Position X="14.75" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAIBAAAAgAQAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Service\ServiceSite.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_RepoRepliTbSites" />
+      <Field Name="_DbContextIntern" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SupervisorProcessing.Service.ServiceTypeIndexation" Collapsed="true">
+    <Position X="19" Y="9.75" Width="1.5" />
+    <AssociationLine Name="_RepoSite" Type="SupervisorProcessing.Repository.SiteRepository" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="19" Y="10.093" />
+        <Point X="17.75" Y="10.093" />
+        <Point X="17.75" Y="10.5" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.034" Y="0.068" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAACAAAAAAAA=</HashCode>
+      <FileName>Service\ServiceTypeIndexation.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_RepoSite" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SupervisorProcessing.Utils.ActionLooper" Collapsed="true">
+    <Position X="16.25" Y="1" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIACAAAAEAAAAggAAAAggAACAAIAAAAiAAAAA=</HashCode>
+      <FileName>Utils\ActionLooper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SupervisorProcessing.Utils.ConcurrentBagExtensions" Collapsed="true">
+    <Position X="10.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Utils\ConcurrentBagExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SupervisorProcessing.Utils.ConfigTimeCollectLoop" Collapsed="true">
+    <Position X="12.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Utils\ConfigTimeCollectLoop.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SupervisorProcessing.Utils.Mapper" Collapsed="true">
+    <Position X="10.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAACAA=</HashCode>
+      <FileName>Utils\Mapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SupervisorProcessing.Utils.SupervisorProcessingStartup" Collapsed="true">
+    <Position X="22.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Utils\SupervisorProcessingStartup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.EntityFrameworkCore.DbSet&lt;TEntity&gt;">
+    <Position X="7.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
