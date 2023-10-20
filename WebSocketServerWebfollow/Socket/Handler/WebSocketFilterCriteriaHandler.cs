@@ -54,7 +54,7 @@ namespace WebSocketServerWebfollow.Handler
 
         public override async Task Receive(WebSocket socket, WebSocketReceiveResult result, byte[] buffer)
         {
-            FilterCriteriaInquiry inquiry;
+            //FilterCriteriaInquiry inquiry;
 
             var serviceMessage = new FilterCriteriaMessageCreator();
             var messageResponse = serviceMessage.CreateMessage(ETypeMessage.NEW);

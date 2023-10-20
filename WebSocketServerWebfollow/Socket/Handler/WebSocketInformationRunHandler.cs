@@ -28,7 +28,8 @@ namespace WebSocketServerWebfollow.Handler
         {
             await Task.Run(() =>
             {
-                var message = Encoding.UTF8.GetString(buffer, 0, result.Count);
+                string message = Encoding.UTF8.GetString(buffer, 0, result.Count);
+                Log.Logger.Information("new message : {message} IdSchedules.AddRange ", message);
                 var inquiry = InformationRunSubscriptionInquiry.DeserializeFromJson(message);
 
                 _logger.Information("user with ID : {id} ask information", Connections.GetId(socket));
